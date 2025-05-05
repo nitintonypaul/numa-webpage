@@ -1,0 +1,121 @@
+/*Styles for navigation bar*/
+
+/*Animations*/
+@keyframes pop-fade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Setting default values to 0*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*The entire Navbar*/
+.navbar {
+    display: flex;
+    background-color: var(--primary-color);
+    
+    position: fixed;
+    width: 100vw;
+    transition: background-color 0.2s;
+}
+
+/*Logo system*/
+.logo {
+    display: flex;
+    gap: 5px;
+    font-family: Archivo Black;
+    font-size: 2rem;
+    letter-spacing: -3px;
+    user-select: none;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    animation: pop-fade 0.5s;
+
+    transition: color 0.2s;
+}
+
+/*Navigation elements*/
+.navigations {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: Funnel Display;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+
+    animation: pop-fade 1s;
+}
+
+.navigations > div {
+    color: var(--secondary-color);
+    position: relative;
+
+    transition: color 0.2s;
+}
+
+/*Navigation element link animation*/
+.nav-element > a::before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    border-radius: 10px;
+    width: 0%;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+.nav-element > a:hover::before {
+    width: 100%;
+    opacity: 90%;
+}
+.nav-element {
+    transition: opacity 0.5s ease;
+}
+.nav-element:hover {
+    opacity: 90%;
+}
+
+/*Setting <a> color to secondary*/
+.navigations > div > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/*Theme toggle button*/
+.dark-light-toggle {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: text-shadow 0.5s;
+}
+
+.dark-light-toggle:hover {
+    text-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+/*Burger Menu*/
+.burger-menu {
+    font-size: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .nav-element {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+}

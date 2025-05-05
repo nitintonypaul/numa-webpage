@@ -1,0 +1,9 @@
+/*Set of variables to be used in the website*/
+:root {
+
+    /*LIGHT MODE: PRIM: #E0E0E0 SEC: #1F1F1F
+      DARK MODE: PRIM: #1F1F1F SEC: #E0E0E0*/
+      
+    --primary-color: #1f1f1f;
+    --secondary-color: #e0e0e0;
+}
