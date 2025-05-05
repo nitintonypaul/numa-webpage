@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.style.setProperty('--primary-color', '#1f1f1f')
             document.documentElement.style.setProperty('--secondary-color', '#e0e0e0')
 
-            //Switching the theme icon to 'ligt'
+            //Switching the theme icon to 'light'
             document.getElementById('theme-toggle').innerHTML = `<i class='bx bx-sun'></i>`
         }
     }
