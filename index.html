@@ -57,7 +57,7 @@
 
             <!--GitHub-->
             <div class="nav-element github">
-                <a href="https://github.com/nitintonypaul/numa">
+                <a href="https://github.com/nitintonypaul/numa" target="_blank">
                     GitHub
                 </a>
             </div>
@@ -70,7 +70,7 @@
             </div>
 
             <!--Responsive Menu-->
-            <div class="burger-menu">
+            <div class="burger-menu" id="burger-menu">
                 <i class='bx bx-menu'></i>
             </div>
 
@@ -78,7 +78,50 @@
 
     </nav>
 
+    <!--Responsive Div-->
+    <div class="responsive-navbar-container" id="responsive-navbar-container">
 
+        <!--Close Button-->
+        <div class="close-btn" id="close-resp-menu">
+            <i class='bx bx-collapse-alt'></i>
+        </div>
+        
+        <!--Home-->
+        <div class="resp-nav-element home">
+            <a href="#">
+                Home
+            </a>
+        </div>
+        
+        <!--Features-->
+        <div class="resp-nav-element features">
+            <a href="#">
+                Features
+            </a>
+        </div>
+
+        <!--GitHub-->
+        <div class="resp-nav-element github">
+            <a href="https://github.com/nitintonypaul/numa" target="_blank">
+                GitHub
+            </a>
+        </div>
+
+        <!--FAQs-->
+        <div class="resp-nav-element faq">
+            <a href="#">
+                FAQs
+            </a>
+        </div>
+
+    </div>
+
+    <!--GSAP-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    
     <!--Scripts-->
     <script src="js/navbarOps.js"></script>
 </body>
