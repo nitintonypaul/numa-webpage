@@ -1,5 +1,5 @@
-//Script for Navbar operations
-//Ensureing DOMContent is loaded
+//SCRIPT FOR NAVBAR OPERATIONS
+//Ensuring DOMContent is loaded
 document.addEventListener('DOMContentLoaded', () => {
 
     //Function to switch theme
@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //Switching the theme icon to 'dark'
             document.getElementById('theme-toggle').innerHTML = `<i class='bx bx-moon'></i>`
+
+            //Changing intro image
+            document.getElementById('intro-image-container').innerHTML = `<img src="assets/numa-dark.PNG">`
         }
         else {
             document.documentElement.style.setProperty('--primary-color', '#1f1f1f')
@@ -19,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //Switching the theme icon to 'ligt'
             document.getElementById('theme-toggle').innerHTML = `<i class='bx bx-sun'></i>`
+
+            //Changing intro image
+            document.getElementById('intro-image-container').innerHTML = `<img src="assets/numa-light.PNG">`
         }
     }
 
