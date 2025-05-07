@@ -1,0 +1,54 @@
+/*Styles for Main Content*/
+body {
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
+}
+
+/*Scrollbar customisation*/
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+}
+
+/*Introduction Section*/
+.intro-section {
+    background-color: var(--primary-color);
+    width: 100%;
+    box-sizing: border-box;
+    height: calc(100vh - 55px);
+    margin-top: 55px;
+    padding: 5% 5%;
+    position: relative;
+
+    transition: background-color 0.2s;
+}
+
+.slogan {
+    font-size: clamp(2rem, 12vw, 12rem);
+    font-family: 'Archivo Black';
+    line-height: 100%;
+    user-select: none;
+    color: var(--secondary-color);
+}
+
+/*Image Settings*/
+.intro-image-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px -10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.intro-image-container > img {
+    width: calc(100vw / 1.9);
+    display: block;
+}
