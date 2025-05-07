@@ -18,6 +18,9 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+
 
     <!--Boxicons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -43,7 +46,7 @@
 
             <!--Home-->
             <div class="nav-element home">
-                <a href="#">
+                <a href="#intro-section">
                     Home
                 </a>
             </div>
@@ -78,7 +81,7 @@
 
     </nav>
 
-    <!--Responsive Div-->
+    <!--Responsive Menu-->
     <div class="responsive-navbar-container" id="responsive-navbar-container">
 
         <!--Close Button-->
@@ -88,7 +91,7 @@
         
         <!--Home-->
         <div class="resp-nav-element home">
-            <a href="#">
+            <a href="#intro-section">
                 Home
             </a>
         </div>
@@ -116,6 +119,20 @@
 
     </div>
 
+    <!--Landing Page-->
+    <section class="intro-section" id="intro-section">
+        
+        <!--Large Texts [SLOGAN]-->
+        <h1 class="slogan" id="slogan-1"></h1><br>
+        <h1 class="slogan" id="slogan-2"></h1><br>
+        <h1 class="slogan" id="slogan-3"></h1><br>
+
+        <!--Introduction Image display-->
+        <div class="intro-image-container" id="intro-image-container">
+            <img src="assets/numa-light.PNG">
+        </div>
+    </section>
+
     <!--GSAP-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
@@ -124,5 +141,6 @@
     
     <!--Scripts-->
     <script src="js/navbarOps.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
