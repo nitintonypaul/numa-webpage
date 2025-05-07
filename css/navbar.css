@@ -27,7 +27,7 @@
 .logo {
     display: flex;
     gap: 5px;
-    font-family: Archivo Black;
+    font-family: 'Archivo Black';
     font-size: 2rem;
     letter-spacing: -3px;
     user-select: none;
@@ -47,7 +47,7 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    font-family: Funnel Display;
+    font-family: 'Funnel Display';
     padding: 0px 20px;
     font-size: 1.2rem;
 
@@ -71,6 +71,7 @@
     background-color: var(--secondary-color);
     bottom: 0;
     transition: width 0.5s ease, opacity 0.5s ease;
+    margin: -1px 0px;
 }
 .nav-element > a:hover::before {
     width: 100%;
@@ -104,10 +105,43 @@
 
 /*Burger Menu*/
 .burger-menu {
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+/*Responsive Menu*/
+.responsive-navbar-container {
+    display: none;
+    flex-direction: column;
+    height: 0vh;
+    position: relative;
+    background-color: var(--primary-color);
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+
+    transition: height 1s ease;
+}
+
+.close-btn {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.resp-nav-element > a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    width: 100%;
+    font-family: 'Funnel Display';
+    font-size: 1.5rem;
 }
 
 /*Media Queries*/
@@ -116,6 +150,9 @@
         display: none;
     }
     .burger-menu {
+        display: flex;
+    }
+    .responsive-navbar-container {
         display: flex;
     }
 }
