@@ -23,12 +23,51 @@
 
 @media screen and (max-width: 426px) {
     .intro-section {
-        padding: 10% 5%;
+        padding: 10% 3%;
+        align-items: baseline;
+        height: max-content;
     }
     .intro-image-container > img {
         width: calc(100vw / 1.1);
     }
     .intro-image-container {
-        transform: translate(-50%, -10%);
+        transform: translateX(-50%);
+        border-radius: 2px;
+        position: relative;
+    }
+}
+
+/*Media Queries for Focus and Flow section*/
+@media screen and (max-width: 768px) {
+    .focus-and-flow {
+        height: max-content;
+    }
+    .ff-showcase {
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 50px;
+    }
+    .ff-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ff-image-container > img {
+        width: calc(100vw / 1.5);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .ff-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ff-image-container > img {
+        width: calc(100vw / 1.1);
+    }
+    .ff-description {
+        padding: 0px 20px;
+        font-size: 1rem;
     }
 }
