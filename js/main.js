@@ -13,4 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //Image animation
     gsap.from('.intro-image-container', {y:10, opacity: 0, duration: 0.7, delay: 1.1})
 
+    //Scrolling Animation for Focus and Flow section
+    gsap.from(".ff-heading", {y: 50, opacity: 0, duration: 1, scrollTrigger: { trigger: ".ff-heading", start: "top 80%", toggleActions: "play none none none"}});
+    gsap.from(".ff-image-container", {y: 50, opacity: 0, duration: 0.7, scrollTrigger: { trigger: ".ff-image-container", start: "top 80%", toggleActions: "play none none none"}});
+    gsap.from(".ff-description", {y: 50, opacity: 0, duration: 0.7, delay:0.2, scrollTrigger: { trigger: ".ff-description", start: "top 80%", toggleActions: "play none none none"}});
+
+    
 })
