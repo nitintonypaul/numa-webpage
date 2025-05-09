@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
     .intro-section {
         padding: 10% 3%;
         align-items: baseline;
@@ -54,10 +54,16 @@
     }
     .ff-image-container > img {
         width: calc(100vw / 1.5);
+        border-radius: 5px;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
+    .focus-and-flow {
+        padding-top: 0px;
+        padding-bottom: 100px;
+        min-height: fit-content;
+    }
     .ff-image-container {
         display: flex;
         justify-content: center;
@@ -65,9 +71,82 @@
     }
     .ff-image-container > img {
         width: calc(100vw / 1.1);
+        border-radius: 1px;
     }
     .ff-description {
         padding: 0px 20px;
         font-size: 1rem;
+    }
+}
+
+/*Media Queries for Modular Section*/
+@media screen and (max-width: 768px) {
+    .modular {
+        padding-top: 0px;
+        padding-bottom: 100px;
+        min-height: fit-content;
+    }
+    .m-image-container > img {
+        width: calc(100vw / 1.1);
+        border-radius: 5px;
+    }
+    .m-description {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .modular {
+        padding-top: 0px;
+    }
+    .m-image-container > img {
+        border-radius: 1px;
+    }
+    .m-showcase .m-description {
+        padding: 0px 20px;
+        font-size: 1rem;
+    }
+}
+
+/*Media Queries for Open Source section*/
+@media screen and (max-width: 768px) {
+    .opensource {
+        height: max-content;
+    }
+    .o-showcase {
+        flex-direction: column;
+    }
+    .m-description {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .opensource {
+        padding-top: 0px;
+    }
+    .o-showcase {
+        gap: 50px;
+    }
+    .o-logo-container {
+        padding: 0px 0px;
+        font-size: 20rem;
+    }
+    .o-description {
+        padding: 0px 20px;
+        font-size: 1rem;
+    }
+}
+
+/*Media Queries for footer*/
+@media screen and (max-width: 768px) {
+    .fo-slogan {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .fo-slogan {
+        font-size: 0.6rem;
     }
 }

@@ -1,0 +1,21 @@
+/*Styles for footer*/
+/* I didn't have to make another file, but in case I add links and other stuff in the future*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 50%;
+    user-select: none;
+
+    transition: opacity 0.5s;
+}
+
+.fo-slogan {
+    font-family: 'Archivo Black';
+    color: var(--secondary-color);
+}
+
+.footer:hover {
+    opacity: 100%;
+}
